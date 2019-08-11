@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8b64bb8b-da4c-4ed9-bfc0-3d0b76156b67">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="tableDatSet" uuid="886e5d47-f322-40dc-8f05-40eb771d181c">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+		<queryString language="SQL">
+			<![CDATA[SELECT *
+FROM  javareporting.etudiant , javareporting.filiere
+WHERE   javareporting.etudiant.`Filiere`=  javareporting.filiere.nom]]>
+		</queryString>
+		<field name="Nom" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Nom"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="etudiant"/>
+		</field>
+		<field name="Prenom" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Prenom"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="etudiant"/>
+		</field>
+		<field name="Cne" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Cne"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="etudiant"/>
+		</field>
+		<field name="MoyG" class="java.lang.Float">
+			<property name="com.jaspersoft.studio.field.label" value="MoyG"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="etudiant"/>
+		</field>
+		<field name="MoyN" class="java.lang.Float">
+			<property name="com.jaspersoft.studio.field.label" value="MoyN"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="etudiant"/>
+		</field>
+		<field name="Filiere" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Filiere"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="etudiant"/>
+		</field>
+		<field name="nom" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="nom"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+		</field>
+		<field name="dep" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="dep"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+		</field>
+		<field name="nbre" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="nbre"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+		</field>
+		<field name="chef_f" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="chef_f"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+		</field>
+	</subDataset>
+	<subDataset name="Dataset_" uuid="61469a5c-2962-4350-b58a-99dee9be64fd">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+		<queryString language="SQL">
+			<![CDATA[SELECT *
+FROM  javareporting.filiere]]>
+		</queryString>
+		<field name="nom" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="nom"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+		</field>
+		<field name="dep" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="dep"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+		</field>
+		<field name="nbre" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="nbre"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+		</field>
+		<field name="chef_f" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="chef_f"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+		</field>
+	</subDataset>
+	<subDataset name="Dataset1" uuid="1d511e13-ce58-4d3b-94d3-0eb633e1594c">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+		<queryString language="SQL">
+			<![CDATA[SELECT   javareporting.filiere.chef_f, javareporting.filiere.dep,  javareporting.filiere.nbre
+FROM   javareporting.filiere]]>
+		</queryString>
+		<field name="chef_f" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="chef_f"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+		</field>
+		<field name="dep" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="dep"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+		</field>
+		<field name="nbre" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="nbre"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+		</field>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT DISTINCT *
+FROM  javareporting.etudiant,  javareporting.filiere 
+WHERE  javareporting.etudiant.`Filiere`=  javareporting.filiere.nom]]>
+	</queryString>
+	<field name="Nom" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Nom"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="etudiant"/>
+	</field>
+	<field name="Prenom" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Prenom"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="etudiant"/>
+	</field>
+	<field name="Cne" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Cne"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="etudiant"/>
+	</field>
+	<field name="MoyG" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.label" value="MoyG"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="etudiant"/>
+	</field>
+	<field name="MoyN" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.label" value="MoyN"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="etudiant"/>
+	</field>
+	<field name="Filiere" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Filiere"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="etudiant"/>
+	</field>
+	<field name="nom" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nom"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+	</field>
+	<field name="dep" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="dep"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+	</field>
+	<field name="nbre" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="nbre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+	</field>
+	<field name="chef_f" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="chef_f"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="filiere"/>
+	</field>
+	<variable name="MoyG_SUM" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{MoyG}]]></variableExpression>
+	</variable>
+	<variable name="MoyG_1_SUM" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{MoyG}]]></variableExpression>
+	</variable>
+	<variable name="MoyN_SUM" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{MoyN}]]></variableExpression>
+	</variable>
+	<variable name="nbre_SUM" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{nbre}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="298" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="10" width="595" height="30" uuid="018a8ede-9ae2-4920-a8aa-c413ff4deed5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Spinnaker" size="16"/>
+				</textElement>
+				<text><![CDATA[Rapport De gestion Filières]]></text>
+			</staticText>
+			<image>
+				<reportElement x="-10" y="-10" width="40" height="40" uuid="0377aee0-c5b4-4bbc-9a72-6824870d02cb"/>
+				<imageExpression><![CDATA["img/icon.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="-20" y="47" width="595" height="1" uuid="c8152f24-40d4-4053-95b5-cf8903cdde5f"/>
+			</line>
+			<line>
+				<reportElement x="40" y="-20" width="1" height="67" uuid="a7d20579-c78f-4fec-9513-38a5ff5cba58"/>
+			</line>
+			<staticText>
+				<reportElement x="13" y="70" width="330" height="20" uuid="031dccda-ff9d-460a-82d6-b7e3c21d5820"/>
+				<textElement>
+					<font fontName="Spinnaker"/>
+				</textElement>
+				<text><![CDATA[- La liste des étudiants par rapport la note Générale et ses filières:]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="234" y="27" width="100" height="20" uuid="da712ab8-6cb6-44fd-b8bc-f197b6373476"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="353" splitType="Stretch">
+			<barChart>
+				<chart evaluationTime="Report">
+					<reportElement x="-10" y="46" width="260" height="140" uuid="2e29b973-1058-404a-8a30-ee4eac827df5"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{Filiere}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{Filiere}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{nbre}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+			<lineChart>
+				<chart evaluationTime="Report">
+					<reportElement x="-10" y="-204" width="560" height="202" uuid="2c074b81-7499-46ea-854f-189466087442"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{Prenom}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{Prenom}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{MoyG}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{Filiere}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{Prenom}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{MoyG}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<linePlot>
+					<plot/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</linePlot>
+			</lineChart>
+			<staticText>
+				<reportElement x="10" y="34" width="250" height="22" uuid="0dddd649-6ba7-4f20-abdc-c6b902928589"/>
+				<textElement>
+					<font fontName="Spinnaker"/>
+				</textElement>
+				<text><![CDATA[- La liste des filières et le nombres des étudiants :]]></text>
+			</staticText>
+			<pieChart>
+				<chart evaluationTime="Report">
+					<reportElement x="270" y="19" width="280" height="167" uuid="f88a70c6-10da-4d9f-b82a-25976d98aea1"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<keyExpression><![CDATA[$F{nom}]]></keyExpression>
+					<valueExpression><![CDATA[$F{nbre}]]></valueExpression>
+				</pieDataset>
+				<piePlot>
+					<plot/>
+					<itemLabel/>
+				</piePlot>
+			</pieChart>
+			<thermometerChart>
+				<chart evaluationTime="Report">
+					<reportElement x="186" y="180" width="153" height="173" uuid="73291a51-0948-4b21-a670-b7914257533a"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<valueDataset>
+					<dataset resetType="Report">
+						<datasetRun subDataset="Dataset_" uuid="dfdc309c-876c-4863-a62e-3a67a4c482aa"/>
+					</dataset>
+					<valueExpression><![CDATA[$F{nbre}]]></valueExpression>
+				</valueDataset>
+				<thermometerPlot valueLocation="left">
+					<plot/>
+					<valueDisplay/>
+					<dataRange>
+						<lowExpression><![CDATA[1]]></lowExpression>
+						<highExpression><![CDATA[100]]></highExpression>
+					</dataRange>
+					<lowRange>
+						<dataRange>
+							<lowExpression><![CDATA[1]]></lowExpression>
+							<highExpression><![CDATA[100]]></highExpression>
+						</dataRange>
+					</lowRange>
+					<mediumRange>
+						<dataRange>
+							<lowExpression><![CDATA[1]]></lowExpression>
+							<highExpression><![CDATA[100]]></highExpression>
+						</dataRange>
+					</mediumRange>
+					<highRange>
+						<dataRange>
+							<lowExpression><![CDATA[1]]></lowExpression>
+							<highExpression><![CDATA[100]]></highExpression>
+						</dataRange>
+					</highRange>
+				</thermometerPlot>
+			</thermometerChart>
+			<line>
+				<reportElement x="284" y="231" width="89" height="1" uuid="5a2e1aef-2899-476a-9e4e-629cb07ee0e1"/>
+			</line>
+			<line>
+				<reportElement x="374" y="231" width="49" height="39" uuid="e2b72972-ea9b-42ba-998c-ca9c6059fb02"/>
+			</line>
+			<staticText>
+				<reportElement x="373" y="272" width="134" height="30" uuid="163b5a44-8b23-49ff-9747-25168e4f9cbf"/>
+				<textElement>
+					<font fontName="Spinnaker"/>
+				</textElement>
+				<text><![CDATA[Le nombre totale des �tudiants par d�partement]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="106" splitType="Stretch">
+			<staticText>
+				<reportElement x="330" y="50" width="237" height="30" uuid="62dc0ab4-895b-4e64-8c18-658f6f4d7eaa"/>
+				<textElement>
+					<font fontName="Spinnaker" size="12"/>
+				</textElement>
+				<text><![CDATA[R�aliser Par : DAHMAMOU MOHAMED]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="60" splitType="Stretch"/>
+	</summary>
+</jasperReport>
